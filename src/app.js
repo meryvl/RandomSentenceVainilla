@@ -20,8 +20,8 @@ window.onload = function() {
   ];
 
   function randomSentence(arr1, arr2, arr3) {
-    for (let i = 0; i < who.length; i++) {
-      who[i] = who[i][0].toUpperCase() + who[i].substr(1);
+    for (let i = 0; i < arr1.length; i++) {
+      arr1[i] = arr1[i][0].toUpperCase() + arr1[i].substr(1);
     }
     const number = Math.floor(Math.random() * arr1.length);
     const number2 = Math.floor(Math.random() * arr2.length);
