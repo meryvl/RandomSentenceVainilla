@@ -4,12 +4,12 @@ import "./style.css";
 
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
+import { Button } from "bootstrap";
 
 window.onload = function() {
-  //write your code here
   console.log("Hello Rigo from the console!");
-  let who = ["the dog", "my granma", "his turtle", "my bird"];
 
+  let who = ["the dog", "my granma", "his turtle", "my bird"];
   let what = [" eat", "pissed", "crushed", "broked"];
   let when = [
     "before the class",
@@ -29,6 +29,7 @@ window.onload = function() {
     const sentence = arr1[number] + " " + arr2[number2] + " " + arr3[number3];
     return sentence;
   }
-
-  document.querySelector("#excuse").innerHTML = randomSentence(who, what, when);
+  const excuseReturn = (document.querySelector(
+    "#excuse"
+  ).innerHTML = randomSentence(who, what, when));
 };
