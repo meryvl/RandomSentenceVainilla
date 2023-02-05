@@ -4,9 +4,9 @@ import "./style.css";
 
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
-import { Button } from "bootstrap";
 
-window.onload = function() {
+const button = document.querySelector("button");
+button.addEventListener("click", function() {
   console.log("Hello Rigo from the console!");
 
   let who = ["the dog", "my granma", "his turtle", "my bird"];
@@ -32,4 +32,4 @@ window.onload = function() {
   const excuseReturn = (document.querySelector(
     "#excuse"
   ).innerHTML = randomSentence(who, what, when));
-};
+});
